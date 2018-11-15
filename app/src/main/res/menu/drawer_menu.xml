@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/menu_home"
+            android:title="@string/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp">
+        </item>
+        <item
+            android:id="@+id/menu_grafik"
+            android:title="@string/grafik"
+            android:icon="@drawable/ic_graphic_eq_black_24dp">
+        </item>
+        <item
+            android:id="@+id/menu_profil"
+            android:title="@string/profil"
+            android:icon="@drawable/ic_person_black_24dp">
+        </item>
+        <item
+            android:id="@+id/menu_report"
+            android:title="@string/report"
+            android:icon="@drawable/ic_report_problem_black_24dp">
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_logout"
+            android:title="@string/lo"
+            android:icon="@drawable/v_logout"
+            android:visible="true">
+        </item>
+    </group>
+</menu>

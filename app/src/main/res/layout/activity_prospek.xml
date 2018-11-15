@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProspekActivity"
+    android:orientation="vertical">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/prospek_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:cardUseCompatPadding="true"
+            tools:cardElevation="5dp"
+            tools:cardCornerRadius="5dp"
+            android:scrollbars="vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_action_btn_addprospek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/ic_person_add_white_24dp"/>
+    </RelativeLayout>
+</LinearLayout>

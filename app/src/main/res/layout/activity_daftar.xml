@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DaftarActivity"
+    android:orientation="vertical">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#898789">
+                <EditText
+                    android:id="@+id/nama_sales_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nama_lengkap"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#898789">
+                <EditText
+                    android:id="@+id/username_sales_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#898789">
+                <EditText
+                    android:id="@+id/pass_sales_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pass"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"/>
+                <TextView
+                    android:id="@+id/warning_pass_min_char"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="#E74C3C"
+                    android:text="@string/pass_min"
+                    android:textSize="12sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#898789">
+                <EditText
+                    android:id="@+id/telp_sales_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_telp"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#898789">
+                <EditText
+                    android:id="@+id/email_sales_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edt"
+                android:padding="5dp"
+                android:layout_marginBottom="18dp">
+                <Spinner
+                    android:id="@+id/id_spv_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:drawSelectorOnTop="true"
+                    android:theme="@style/SpinnerStyle" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/daftar_sales_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E74C3C"
+                android:textColor="#FFFFFF"
+                android:text="@string/daftar_sales"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
